@@ -96,7 +96,7 @@ install: build
 	cp lib$(LIB_FILES:.c=.so) $(DESTDIR)/$(LIBDIR)
 	cp $(LIB_FILES:.c=.h) $(DESTDIR)/include
 	cp -r res/* $(DESTDIR)/$(LIBDIR)/$(NAME)
-	cp default.config $(ETC_DIR)/$(NAME)/config
+	cp default.config $(DESTDIR)/$(ETC_DIR)/$(NAME)/config
 	cp ./$(NAME).1.gz $(DESTDIR)/$(MANDIR)
 
 uninstall:
